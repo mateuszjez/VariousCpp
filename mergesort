@@ -33,11 +33,11 @@ int main()
     std::cout<<"\n";
     mergesort(X,0,X.size()-1,
               [](int &x1,int &x2){
-             return x1<x2;
+             return x1<x2;                  //descending sorting
          });
     mergesort(X,0,X.size()-1,
               [](int &x1,int &x2){
-             return (x1%2==0)&&(x2%2==1);
+             return (x1%2==0)&&(x2%2==1);   //differentiation of odd and even numbers
          });
     std::cout<<"Sorted:\n";
     for(int &elem: X)
